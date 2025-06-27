@@ -67,6 +67,32 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* ✅ 반응형 스타일 추가 */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .sidebar {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .sidebar img {
+        width: 140px;
+      }
+
+      .content h1 {
+        font-size: 24px;
+      }
+
+      .content p {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -86,7 +112,7 @@
 
       <p>My research examines the political consequences of economic change, with a particular focus on labor unions. I am especially interested in how unions' responses to economic decline shape party platforms and voting behaviors in the United States.</p>
 
-      <p>You can download my CV <a href="CV.pdf" target="_blank">here</a>.</p>
+      <p>You can download my CV <a href="cv.pdf" target="_blank">here</a>.</p>
     </div>
   </div>
 
